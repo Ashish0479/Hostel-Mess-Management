@@ -5,6 +5,8 @@ const userRouter = require('./route/userRouter')
 const authRouter=require('./route/authRoute')
 const studentsRouter = require('./manager/routes/studentsRouter');
 const cookieParser = require('cookie-parser');
+const attendanceRouter = require('./manager/routes/attendenceRouter');
+
 
 
 
@@ -23,6 +25,7 @@ app.use(express.urlencoded({extended:true}))
 app.use('/users',userRouter);
 app.use('/auth', authRouter);
 app.use('/students', studentsRouter);
+app.use('/attendance', attendanceRouter);
 
 app.get('/hi',(req,res)=>{
     return res.json({message:'hello'})
