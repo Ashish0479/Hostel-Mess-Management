@@ -53,14 +53,13 @@ const studentSchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
-studentSchema.pre('save', async function () {
-
-    //mongodb m save hon t pehla encryot hoja ga password kyunki pre wala middleware use kra h
-
- 
+studentSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) return next(); // Update case me dobara hash na ho
     const hashedPassword = await bcrypt.hash(this.password, 10);
     this.password = hashedPassword;
+    next();
 });
+
 
 
 
