@@ -1,0 +1,45 @@
+[
+  {
+    "day": "Monday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  },
+  {
+    "day": "Tuesday",
+    "breakfast": "Aloo Puri",
+    "lunch": "Chole Chawal",
+    "dinner": "Roti + Mix Veg"
+  },
+  {
+    "day": "Wednesday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  },
+  {
+    "day": "Thursday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  },
+  {
+    "day": "Friday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  },
+  {
+    "day": "Saturday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  },
+  {
+    "day": "Sunday",
+    "breakfast": "Poha + Chai",
+    "lunch": "Rajma Chawal",
+    "dinner": "Roti + Aloo Matar"
+  }
+
+]

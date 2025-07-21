@@ -6,6 +6,7 @@ const authRouter=require('./route/authRoute')
 const studentsRouter = require('./manager/routes/studentsRouter');
 const cookieParser = require('cookie-parser');
 const attendanceRouter = require('./manager/routes/attendenceRouter');
+const menuRouter = require('./route/menuRouter');
 
 
 
@@ -26,6 +27,9 @@ app.use('/users',userRouter);
 app.use('/auth', authRouter);
 app.use('/students', studentsRouter);
 app.use('/attendance', attendanceRouter);
+
+app.use('/menu', menuRouter);
+
 
 app.get('/hi',(req,res)=>{
     return res.json({message:'hello'})
