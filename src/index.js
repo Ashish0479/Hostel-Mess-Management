@@ -9,7 +9,7 @@ const attendanceRouter = require('./manager/routes/attendenceRouter');
 const menuRouter = require('./route/menuRouter');
 const studentAuthRoutes = require('./student/routes/studentLoginRouter');
 const billRouter=require('./route/billRouter')
-
+const feedbackRouter = require('./student/routes/feedbackRouter');
 
 
 
@@ -32,6 +32,8 @@ app.use('/attendance', attendanceRouter);
 app.use('/menu', menuRouter);
 app.use('/auth', studentAuthRoutes);
 app.use('/bill',billRouter)
+app.use('/feedback', feedbackRouter);
+
 
 
 app.get('/hi',(req,res)=>{
